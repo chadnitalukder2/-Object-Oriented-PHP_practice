@@ -73,8 +73,15 @@ echo "Work wirh Return. <br> ";
 
 $name = $vehicle->getName();
 echo $name;
+echo "<br>";
 
+echo "<br>";
+echo "New Object <br>";
+$obj = new Vehicle();
+$obj->set("XYZ", "Green", 6000);
+$obj->display();
+echo "<br>";
 
-
+$vehicle->display();
 
 ?>
