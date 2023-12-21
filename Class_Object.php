@@ -29,15 +29,20 @@ $obj->getColor();*/
 class Vehicle{
     public $name = "Corola";
     public $color = "Red";
+    public $price;
 
-    function set($name, $color){
-        $this->name = $name;
+    function set($name, $color, $price = 2000)
+    {
+        $this->name  = $name;
         $this->color = $color;
+        $this->price = $price;
     }
 
-    function display(){
+    function display()
+    {
         echo "Name is : {$this->name} <br>";
         echo "Color is : {$this->color} <br>";
+        echo "Price is : {$this->price} <br>";
     }
    
 }
@@ -49,7 +54,14 @@ $vehicle = new Vehicle();
 //echo "Name is :".$vehicle->name."<br>";
 //echo "Color is :".$vehicle->color."<br>";
 
+$vehicle->display();
+
+echo "<br>";
 $vehicle->set("BMW", "White");
+$vehicle->display();
+
+echo "<br>";
+$vehicle->set("BMW", "White", 9000);
 $vehicle->display();
 
 ?>
