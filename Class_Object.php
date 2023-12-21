@@ -31,18 +31,22 @@ class Vehicle{
     public $color = "Red";
     public $price;
 
-    function set($name, $color, $price = 2000)
+    function set( string $name, string $color, int $price = 2000):void
     {
         $this->name  = $name;
         $this->color = $color;
         $this->price = $price;
     }
 
-    function display()
+    function display() : void
     {
         echo "Name is : {$this->name} <br>";
         echo "Color is : {$this->color} <br>";
         echo "Price is : {$this->price} <br>";
+    }
+    function getName():string
+    {
+        return $this->name;
     }
    
 }
@@ -63,5 +67,14 @@ $vehicle->display();
 echo "<br>";
 $vehicle->set("BMW", "White", 9000);
 $vehicle->display();
+
+echo "<br>";
+echo "Work wirh Return. <br> ";
+
+$name = $vehicle->getName();
+echo $name;
+
+
+
 
 ?>
