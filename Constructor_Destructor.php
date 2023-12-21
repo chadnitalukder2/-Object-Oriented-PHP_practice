@@ -17,6 +17,11 @@ class Student{
         echo "Name is {$this->name} <br>";
         echo "Roll is {$this->roll}";
     }
+
+    function __destruct()
+    {
+        echo "All work has been done";
+    }
 }
 $std = new Student("Jone Sina", 23);
 $std->display();
@@ -25,10 +30,6 @@ echo "<br><br>";
 
 $std2 = new Student("Nitesh Dash");
 $std2->display();
-
-?>
-<?php
-#====================Destructor==========================
-
+echo "<br>";
 
 ?>
