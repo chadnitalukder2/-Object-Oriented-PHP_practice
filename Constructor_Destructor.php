@@ -23,6 +23,8 @@ class Student{
         echo "All work has been done";
     }
 }
+
+
 $std = new Student("Jone Sina", 23);
 $std->display();
 

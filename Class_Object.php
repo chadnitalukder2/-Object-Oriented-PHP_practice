@@ -18,6 +18,7 @@
 
 }
 $obj = new Foo();
++
 $obj->display();
 $obj->color = "Red";
 echo $obj->color. '<br>';

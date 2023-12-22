@@ -1,5 +1,5 @@
 <?php
-#Private = e class e make kora hoy sudu ai class ei use kora jay
+#Private = je classe make kora hoy sudu ai class ei use kora jay
 #Public = all class e use kora jay
 #Protected = same class and child class e use kora jay
 #===================================================================
